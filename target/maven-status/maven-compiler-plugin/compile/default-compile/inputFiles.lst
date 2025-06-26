@@ -6,6 +6,7 @@ C:\Users\Abramov\projects\my_projects\ai_assistant_chat\src\main\java\com\aiassi
 C:\Users\Abramov\projects\my_projects\ai_assistant_chat\src\main\java\com\aiassistant\config\HttpClientConfig.java
 C:\Users\Abramov\projects\my_projects\ai_assistant_chat\src\main\java\com\aiassistant\service\AiService.java
 C:\Users\Abramov\projects\my_projects\ai_assistant_chat\src\main\java\com\aiassistant\service\impl\GroqAiService.java
+C:\Users\Abramov\projects\my_projects\ai_assistant_chat\src\main\java\com\aiassistant\config\JsonConfig.java
 C:\Users\Abramov\projects\my_projects\ai_assistant_chat\src\main\java\com\aiassistant\model\AiRequest.java
 C:\Users\Abramov\projects\my_projects\ai_assistant_chat\src\main\java\com\aiassistant\config\ApplicationProperties.java
 C:\Users\Abramov\projects\my_projects\ai_assistant_chat\src\main\java\com\aiassistant\service\RateLimitService.java

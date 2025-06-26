@@ -1,4 +1,5 @@
 com\aiassistant\config\ApplicationProperties$BotBehaviorProperties.class
+com\aiassistant\config\JsonConfig.class
 com\aiassistant\AiAssistantApplication.class
 META-INF\spring-configuration-metadata.json
 com\aiassistant\model\AiRequest.class

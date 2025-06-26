@@ -1,0 +1,39 @@
+# Test configuration for AI Assistant Telegram Bot
+spring:
+  application:
+    name: "ai-assistant-bot-test"
+  main:
+    banner-mode: "off"
+  output:
+    ansi:
+      enabled: "never"
+
+# Test settings
+aiassistant:
+  telegram-bot-token: "test-token"
+  telegram-bot-username: "test-bot"
+  
+  ai-provider:
+    type: "groq"
+    api-key: "test-api-key"
+    api-url: "http://localhost:8080/test"
+    model: "test-model"
+    max-tokens: 100
+    temperature: 0.5
+    timeout-ms: 5000
+  
+  bot-behavior:
+    max-message-length: 1000
+    rate-limit-per-minute: 5
+    default-error-message: "Test error message"
+    welcome-message: "Test welcome message"
+    help-message: "Test help message"
+
+# Logging configuration for tests
+logging:
+  level:
+    com.aiassistant: INFO
+    org.springframework: WARN
+    org.telegram: WARN
+  pattern:
+    console: "%d{HH:mm:ss} %-5level [%thread] %logger{36} - %msg%n"

@@ -1,1 +1,5 @@
+com\aiassistant\service\impl\InMemoryRateLimitServiceTest.class
+com\aiassistant\bot\AiAssistantBotTest.class
 com\aiassistant\AiAssistantApplicationTest.class
+com\aiassistant\service\impl\InMemoryUserServiceTest.class
+com\aiassistant\service\impl\GroqAiServiceTest.class
