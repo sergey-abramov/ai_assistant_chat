@@ -1,0 +1,94 @@
+{
+  "groups": [
+    {
+      "name": "aiassistant",
+      "type": "com.aiassistant.config.ApplicationProperties",
+      "sourceType": "com.aiassistant.config.ApplicationProperties"
+    },
+    {
+      "name": "aiassistant.ai-provider",
+      "type": "com.aiassistant.config.ApplicationProperties$AiProviderProperties",
+      "sourceType": "com.aiassistant.config.ApplicationProperties",
+      "sourceMethod": "aiProvider()"
+    },
+    {
+      "name": "aiassistant.bot-behavior",
+      "type": "com.aiassistant.config.ApplicationProperties$BotBehaviorProperties",
+      "sourceType": "com.aiassistant.config.ApplicationProperties",
+      "sourceMethod": "botBehavior()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "aiassistant.ai-provider.api-key",
+      "type": "java.lang.String",
+      "sourceType": "com.aiassistant.config.ApplicationProperties$AiProviderProperties"
+    },
+    {
+      "name": "aiassistant.ai-provider.api-url",
+      "type": "java.lang.String",
+      "sourceType": "com.aiassistant.config.ApplicationProperties$AiProviderProperties"
+    },
+    {
+      "name": "aiassistant.ai-provider.max-tokens",
+      "type": "java.lang.Integer",
+      "sourceType": "com.aiassistant.config.ApplicationProperties$AiProviderProperties"
+    },
+    {
+      "name": "aiassistant.ai-provider.model",
+      "type": "java.lang.String",
+      "sourceType": "com.aiassistant.config.ApplicationProperties$AiProviderProperties"
+    },
+    {
+      "name": "aiassistant.ai-provider.temperature",
+      "type": "java.lang.Double",
+      "sourceType": "com.aiassistant.config.ApplicationProperties$AiProviderProperties"
+    },
+    {
+      "name": "aiassistant.ai-provider.timeout-ms",
+      "type": "java.lang.Integer",
+      "sourceType": "com.aiassistant.config.ApplicationProperties$AiProviderProperties"
+    },
+    {
+      "name": "aiassistant.ai-provider.type",
+      "type": "java.lang.String",
+      "sourceType": "com.aiassistant.config.ApplicationProperties$AiProviderProperties"
+    },
+    {
+      "name": "aiassistant.bot-behavior.default-error-message",
+      "type": "java.lang.String",
+      "sourceType": "com.aiassistant.config.ApplicationProperties$BotBehaviorProperties"
+    },
+    {
+      "name": "aiassistant.bot-behavior.help-message",
+      "type": "java.lang.String",
+      "sourceType": "com.aiassistant.config.ApplicationProperties$BotBehaviorProperties"
+    },
+    {
+      "name": "aiassistant.bot-behavior.max-message-length",
+      "type": "java.lang.Integer",
+      "sourceType": "com.aiassistant.config.ApplicationProperties$BotBehaviorProperties"
+    },
+    {
+      "name": "aiassistant.bot-behavior.rate-limit-per-minute",
+      "type": "java.lang.Integer",
+      "sourceType": "com.aiassistant.config.ApplicationProperties$BotBehaviorProperties"
+    },
+    {
+      "name": "aiassistant.bot-behavior.welcome-message",
+      "type": "java.lang.String",
+      "sourceType": "com.aiassistant.config.ApplicationProperties$BotBehaviorProperties"
+    },
+    {
+      "name": "aiassistant.telegram-bot-token",
+      "type": "java.lang.String",
+      "sourceType": "com.aiassistant.config.ApplicationProperties"
+    },
+    {
+      "name": "aiassistant.telegram-bot-username",
+      "type": "java.lang.String",
+      "sourceType": "com.aiassistant.config.ApplicationProperties"
+    }
+  ],
+  "hints": []
+}

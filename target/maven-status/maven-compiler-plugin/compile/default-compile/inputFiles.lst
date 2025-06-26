@@ -1,0 +1,15 @@
+C:\Users\Abramov\projects\my_projects\ai_assistant_chat\src\main\java\com\aiassistant\exception\AiServiceException.java
+C:\Users\Abramov\projects\my_projects\ai_assistant_chat\src\main\java\com\aiassistant\AiAssistantApplication.java
+C:\Users\Abramov\projects\my_projects\ai_assistant_chat\src\main\java\com\aiassistant\model\TelegramUser.java
+C:\Users\Abramov\projects\my_projects\ai_assistant_chat\src\main\java\com\aiassistant\service\UserService.java
+C:\Users\Abramov\projects\my_projects\ai_assistant_chat\src\main\java\com\aiassistant\bot\AiAssistantBot.java
+C:\Users\Abramov\projects\my_projects\ai_assistant_chat\src\main\java\com\aiassistant\config\HttpClientConfig.java
+C:\Users\Abramov\projects\my_projects\ai_assistant_chat\src\main\java\com\aiassistant\service\AiService.java
+C:\Users\Abramov\projects\my_projects\ai_assistant_chat\src\main\java\com\aiassistant\service\impl\GroqAiService.java
+C:\Users\Abramov\projects\my_projects\ai_assistant_chat\src\main\java\com\aiassistant\model\AiRequest.java
+C:\Users\Abramov\projects\my_projects\ai_assistant_chat\src\main\java\com\aiassistant\config\ApplicationProperties.java
+C:\Users\Abramov\projects\my_projects\ai_assistant_chat\src\main\java\com\aiassistant\service\RateLimitService.java
+C:\Users\Abramov\projects\my_projects\ai_assistant_chat\src\main\java\com\aiassistant\model\AiResponse.java
+C:\Users\Abramov\projects\my_projects\ai_assistant_chat\src\main\java\com\aiassistant\exception\RateLimitExceededException.java
+C:\Users\Abramov\projects\my_projects\ai_assistant_chat\src\main\java\com\aiassistant\service\impl\InMemoryRateLimitService.java
+C:\Users\Abramov\projects\my_projects\ai_assistant_chat\src\main\java\com\aiassistant\service\impl\InMemoryUserService.java
