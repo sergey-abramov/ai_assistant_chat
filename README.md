@@ -88,29 +88,20 @@ cd ai_assistant_chat
 4. Создайте новый API ключ
 5. Сохраните полученный ключ
 
-### 4. Настройка переменных окружения
+### 4. Настройка application.yml
 
-#### Windows (PowerShell):
-```powershell
-$env:TELEGRAM_BOT_TOKEN="your_telegram_bot_token"
-$env:TELEGRAM_BOT_USERNAME="your_bot_username"
-$env:AI_API_KEY="your_groq_api_key"
+Вместо использования переменных окружения, настройки теперь хранятся в `src/main/resources/application.yml`.
+
+1. Откройте файл `application.yml`.
+2. Замените значения `YOUR_BOT_TOKEN_HERE`, `YOUR_BOT_USERNAME_HERE` и `YOUR_GROQ_API_KEY_HERE` на ваши реальные значения.
+
+Пример:
+```yaml
+telegram-bot-token: "ваш_токен_бота"
+telegram-bot-username: "ваш_юзернейм_бота"
+ai-provider:
+  api-key: "ваш_api_ключ"
 ```
-
-#### Windows (Command Prompt):
-```cmd
-set TELEGRAM_BOT_TOKEN=your_telegram_bot_token
-set TELEGRAM_BOT_USERNAME=your_bot_username
-set AI_API_KEY=your_groq_api_key
-```
-
-#### Linux/Mac:
-```bash
-export TELEGRAM_BOT_TOKEN="your_telegram_bot_token"
-export TELEGRAM_BOT_USERNAME="your_bot_username"
-export AI_API_KEY="your_groq_api_key"
-```
-
 ### 5. Сборка и запуск
 
 #### Сборка проекта:
@@ -126,6 +117,11 @@ mvn spring-boot:run
 #### Или запуск JAR файла:
 ```bash
 java -jar target/telegram-ai-bot-1.0.0.jar
+```
+
+#### Для Windows (удобный запуск):
+```cmd
+run.bat
 ```
 
 ## 🎮 Использование
@@ -149,33 +145,35 @@ java -jar target/telegram-ai-bot-1.0.0.jar
 ## ⚙️ Конфигурация
 
 ### Основные настройки
-Все настройки можно изменить через переменные окружения:
+Все настройки настраиваются в файле `src/main/resources/application.yml`:
 
-| Параметр | Переменная окружения | Значение по умолчанию | Описание |
-|----------|---------------------|----------------------|----------|
-| AI Провайдер | `AI_PROVIDER_TYPE` | `groq` | Тип AI провайдера |
-| AI Модель | `AI_MODEL` | `llama-3.1-8b-instant` | Модель для генерации |
-| Макс. токенов | `AI_MAX_TOKENS` | `1000` | Максимум токенов в ответе |
-| Температура | `AI_TEMPERATURE` | `0.7` | Креативность (0.0-1.0) |
-| Rate Limit | `BOT_RATE_LIMIT` | `10` | Запросов в минуту на пользователя |
-| Макс. длина | `BOT_MAX_MESSAGE_LENGTH` | `4000` | Максимальная длина сообщения |
+| Параметр | Путь в YAML | Значение по умолчанию | Описание |
+|----------|-------------|----------------------|----------|
+| AI Провайдер | `ai-provider.type` | `groq` | Тип AI провайдера |
+| AI Модель | `ai-provider.model` | `llama-3.1-8b-instant` | Модель для генерации |
+| Макс. токенов | `ai-provider.max-tokens` | `1000` | Максимум токенов в ответе |
+| Температура | `ai-provider.temperature` | `0.7` | Креативность (0.0-1.0) |
+| Rate Limit | `bot-behavior.rate-limit-per-minute` | `10` | Запросов в минуту на пользователя |
+| Макс. длина | `bot-behavior.max-message-length` | `4000` | Максимальная длина сообщения |
 
 ### Альтернативные AI провайдеры
 
 #### OpenAI:
-```bash
-export AI_PROVIDER_TYPE=openai
-export AI_API_URL=https://api.openai.com/v1/chat/completions
-export AI_MODEL=gpt-3.5-turbo
-export AI_API_KEY=your_openai_api_key
+```yaml
+ai-provider:
+  type: "openai"
+  api-url: "https://api.openai.com/v1/chat/completions"
+  model: "gpt-3.5-turbo"
+  api-key: "your_openai_api_key"
 ```
 
 #### Локальная модель (Ollama):
-```bash
-export AI_PROVIDER_TYPE=ollama
-export AI_API_URL=http://localhost:11434/v1/chat/completions
-export AI_MODEL=llama2
-# AI_API_KEY не требуется для локальных моделей
+```yaml
+ai-provider:
+  type: "ollama"
+  api-url: "http://localhost:11434/v1/chat/completions"
+  model: "llama2"
+  # api-key не требуется для локальных моделей
 ```
 
 ## 🧪 Тестирование
